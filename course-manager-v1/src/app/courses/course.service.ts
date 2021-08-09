@@ -1,13 +1,20 @@
 import { Course } from "./course";
-import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core'; 
  
 @Injectable({
     providedIn: 'root'
 })
 export class CourseService {
+ 
+ 
+
 
     retrieveAll(): Course[] {
         return COURSES;
+    }
+
+    retrieveById(id: number): Course { 
+        return COURSES.find((courseIterator: Course) => courseIterator.id == id);
     }
 
 }

@@ -9,6 +9,7 @@ import { ReplacePipe } from './pipe/replace-pipe';
 import { NavBarComponent } from './nav-bar/navBar.component';
 import { RouterModule } from '@angular/router';
 import { ErrorNotFoundComponent } from './errors/error-not-found/error-not-found.component';
+import { CourseInfoComponent } from './courses/course-info.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ErrorNotFoundComponent } from './errors/error-not-found/error-not-found
     StarComponent, 
     ReplacePipe,
     NavBarComponent,
+    CourseInfoComponent,
     ErrorNotFoundComponent
   ],
   imports: [
@@ -24,10 +26,13 @@ import { ErrorNotFoundComponent } from './errors/error-not-found/error-not-found
     FormsModule,
     RouterModule.forRoot([
       {
-        path: '', redirectTo: 'courses', pathMatch: 'full'
+        path: 'courses', component: CoursesListComponent
       },
       {
-        path: 'courses', component: CoursesListComponent
+        path: 'courses/info/:id', component: CourseInfoComponent
+      },
+      {
+        path: '', redirectTo: 'courses', pathMatch: 'full'
       },
       {
         path: '**' , component: ErrorNotFoundComponent

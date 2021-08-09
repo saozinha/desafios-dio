@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Course } from './course'
 import { CourseService } from './course.service';
 
-@Component({
-  selector: 'app-courses-list',
+@Component({ 
   templateUrl: './courses-list.component.html',
   styleUrls: ['./courses-list.component.css']
 })

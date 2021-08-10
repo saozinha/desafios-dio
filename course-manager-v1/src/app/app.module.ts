@@ -11,28 +11,19 @@ import { RouterModule } from '@angular/router';
 import { ErrorNotFoundComponent } from './errors/error-not-found/error-not-found.component';
 import { CourseInfoComponent } from './courses/course-info.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CourseModule } from './courses/course.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CoursesListComponent,
-    StarComponent, 
-    ReplacePipe,
-    NavBarComponent,
-    CourseInfoComponent,
+    AppComponent,  
+    NavBarComponent, 
     ErrorNotFoundComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule,
+    CourseModule,
     RouterModule.forRoot([
-      {
-        path: 'courses', component: CoursesListComponent
-      },
-      {
-        path: 'courses/info/:id', component: CourseInfoComponent
-      },
       {
         path: '', redirectTo: 'courses', pathMatch: 'full'
       },

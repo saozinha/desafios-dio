@@ -10,6 +10,7 @@ import { NavBarComponent } from './nav-bar/navBar.component';
 import { RouterModule } from '@angular/router';
 import { ErrorNotFoundComponent } from './errors/error-not-found/error-not-found.component';
 import { CourseInfoComponent } from './courses/course-info.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { CourseInfoComponent } from './courses/course-info.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
       {

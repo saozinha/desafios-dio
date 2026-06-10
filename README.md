@@ -151,18 +151,7 @@ A implementação do Amazon ECS com AWS Fargate, Amazon RDS PostgreSQL e Amazon 
 A adoção de serviços gerenciados reduzirá significativamente os custos operacionais associados à administração de servidores e bancos de dados, além de proporcionar maior escalabilidade, desempenho e disponibilidade para os sistemas corporativos.
 
 A arquitetura proposta segue boas práticas de computação em nuvem, permitindo crescimento sustentável da plataforma e suporte às futuras demandas do negócio.
-
----
-
-## Anexos
-
-1. Arquitetura da solução AWS.
-2. Estimativa de custos mensais.
-3. Plano de implantação da plataforma.
-4. Estratégia de backup e recuperação.
-5. Plano de escalabilidade.
-6. Relatório de otimização financeira.
-
+ 
 ---
 
 ## Assinatura do Responsável pelo Projeto
